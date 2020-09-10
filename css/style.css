@@ -1,0 +1,488 @@
+
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-grey: #eeeeee;
+  --basic-white: #ffffff;
+  --special-red: #FB565A;
+  --special-yellow: #EFC849;
+  --special-green: #00CA74;
+}
+
+
+/* Global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 1440px;
+  background-color: var(--basic-white);
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+.screenreader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  padding: 17px 0 15px 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+  background-color: var(--special-red);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.info-btn {
+  width: 240px;
+}
+
+.info-btn:hover,
+.websites .order-btn:hover {
+  background-color: #E74246;
+}
+
+.info-btn:focus,
+.info-btn:active,
+.websites .order-btn:focus,
+.websites .order-btn:active {
+  color: rgba(255, 255, 255, 0.3);;
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.apps .order-btn {
+  background-color: var(--special-green);
+}
+
+.apps .order-btn:hover {
+  background-color: #00BC6C;
+}
+
+.apps .order-btn:focus,
+.apps .order-btn:active {
+  color: rgba(255, 255, 255, 0.3);;
+  background:  #00AA62;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.presentation .order-btn {
+  background-color: var(--special-yellow);
+}
+
+.presentation .order-btn:hover {
+  background-color: #EAB534;
+}
+
+.presentation .order-btn:focus,
+.presentation .order-btn:active {
+  color: rgba(255, 255, 255, 0.3);;
+  background:#E5A722;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Grid */
+
+.page-body {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.page-header {
+  width: 100%;
+  height: 545px;
+  background-color: var(--basic-grey);
+  padding-top: 75px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.logo {
+  position: absolute;
+  top: 49px;
+}
+
+
+/* Menu */
+
+.menu,
+.user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.menu {
+  margin: 0 auto;
+  margin-right: 245px;
+  justify-content: space-between;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 48px;
+}
+.menu-item:first-child {
+  margin-right: 45px;
+}
+.menu-item a:hover,
+.user-menu-item a:hover {
+  color: var(--special-red);
+}
+
+.menu-item a:focus,
+.user-menu-item a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+.menu-item a:active,
+.user-menu-item a:active {
+  padding-bottom: 13px;
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: 2px solid var(--special-red);
+}
+
+.user-menu {
+  min-width: 115px;
+}
+
+.user-menu-item a {
+  padding-left: 40px;
+}
+
+/* Slider */
+
+.slider {
+  min-width: 1157px;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.slide b {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-1 {
+  position: relative;
+  padding-right: 619px;
+  height: 431px;
+  top: 0;
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slide-image-2 {
+  height: 431px;
+  left: 0;
+  top: 0;
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+}
+
+.slide-image-3 {
+  height: 431px;
+  left: 0;
+  top: 0;
+  background-image: url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+}
+
+.slide-2, .slide-3 {
+  display: none;
+}
+/* Main */
+
+.index-main {
+  padding-top: 80px;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  align-content: flex-start;
+}
+
+.index-main .container {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  align-content: flex-start;
+}
+
+.services {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 80px;
+}
+
+.service {
+  margin-right: 100px;
+}
+
+.service h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us {
+  position: relative;
+  border-top: 2px solid var(--basic-grey);
+  padding-top: 39px;
+  margin-bottom: 73px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-1 {
+  margin-right: 149px;
+}
+
+.about-1 p:first-child {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-1 p:nth-child(2) {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-1 p:nth-child(3) {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.services-list li {
+  display: flex;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.services-list li::before {
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background-color: var(--special-red);
+}
+
+.about-2 {
+  position: relative;
+  width: 360px;
+  height: 208px;
+  top: 0;
+  background-image: url("../img/nerds-illustration1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.about-2 b {
+  padding-top: 245px;
+}
+
+.clients {
+  border-top: 2px solid var(--basic-grey);
+  border-bottom: 2px solid var(--basic-grey);
+  padding-top: 46px;
+  padding-bottom: 44px;
+  padding-right: 41px;
+  padding-left: 32px;
+
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.client-logo {
+  opacity: 0.2;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+.client-logo:focus,
+.client-logo:active {
+  opacity: 0.1;
+}
+/* footer */
+
+.page-footer .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social {
+  margin-right: 139px;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.discount p:first-child {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.discount p:nth-child(2) {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+}
