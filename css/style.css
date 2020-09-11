@@ -70,11 +70,7 @@ input[type="radio"].visually-hidden,
   display: inline-block;
   width: 160px;
   padding: 17px 0 15px 0;
-
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -133,6 +129,11 @@ input[type="radio"].visually-hidden,
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.write-us {
+  width: 219px;
+  height: 50px;
+}
+
 /* Grid */
 
 .page-body {
@@ -177,10 +178,7 @@ input[type="radio"].visually-hidden,
   padding: 0;
   list-style: none;
 
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 30px;
 
   display: flex;
@@ -248,8 +246,6 @@ input[type="radio"].visually-hidden,
 }
 
 .slide b {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -294,13 +290,13 @@ input[type="radio"].visually-hidden,
   align-content: flex-start;
 }
 
-.index-main .container {
+.index-main {
   display: grid;
   grid-template-rows: min-content min-content min-content;
   align-content: flex-start;
 }
 
-.services {
+.services .container {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 80px;
@@ -311,8 +307,6 @@ input[type="radio"].visually-hidden,
 }
 
 .service h3 {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -320,14 +314,10 @@ input[type="radio"].visually-hidden,
 }
 
 .service p {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 24px;
 }
 
-.about-us {
+.about-us  .container {
   position: relative;
   border-top: 2px solid var(--basic-grey);
   padding-top: 39px;
@@ -341,33 +331,23 @@ input[type="radio"].visually-hidden,
   margin-right: 149px;
 }
 
-.about-1 p:first-child {
+.about-1 b:first-of-type{
   margin: 0;
   margin-bottom: 40px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
-.about-1 p:nth-child(2) {
+.about-1 p:first-of-type {
   margin: 0;
   margin-bottom: 40px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 24px;
 }
 
-.about-1 p:nth-child(3) {
+.about-1 b:last-of-type {
   margin: 0;
   margin-bottom: 23px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -376,7 +356,6 @@ input[type="radio"].visually-hidden,
   display: block;
   margin: 0;
   padding: 0;
-  font-size: 0;
   list-style: none;
 }
 
@@ -385,10 +364,6 @@ input[type="radio"].visually-hidden,
   position: relative;
   padding-left: 36px;
   margin-bottom: 24px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 24px;
 }
 
@@ -417,21 +392,23 @@ input[type="radio"].visually-hidden,
   padding-top: 245px;
 }
 
-.clients {
+.clients .container {
   border-top: 2px solid var(--basic-grey);
   border-bottom: 2px solid var(--basic-grey);
-  padding-top: 46px;
-  padding-bottom: 44px;
-  padding-right: 41px;
-  padding-left: 32px;
-
+  margin-bottom: 80px;
+  padding: 46px 41px 44px 32px;
 }
 
 .clients-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .client-logo {
   opacity: 0.2;
 }
@@ -443,6 +420,41 @@ input[type="radio"].visually-hidden,
 .client-logo:focus,
 .client-logo:active {
   opacity: 0.1;
+}
+
+.map-area .container {
+  width: 1440px;
+}
+
+.map-link {
+  position: relative;
+}
+
+.map-link img {
+  width: 1440px;
+  height: 416px;
+}
+
+.map-link .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  padding: 47px 50px 49px 50px;
+  top: 50px;
+  left: 140px;
+  background-color: var(--basic-white);
+}
+.address h3 {
+  margin: 0;
+}
+
+.map-link address {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
 }
 /* footer */
 
@@ -465,8 +477,6 @@ input[type="radio"].visually-hidden,
 .discount p:first-child {
   margin: 0;
   margin-bottom: 10px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -474,10 +484,6 @@ input[type="radio"].visually-hidden,
 
 .discount p:nth-child(2) {
   margin: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 22px;
 }
 

@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header catalog-header">
       <div class="container">
         <nav class="main-nav">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <img src="img/svg/nerds-logo.svg" width="160" height="65">
           </a>
           <ul class="menu">
             <li class="menu-item">
-              <a href="#">Студия</a>
+              <a href="index.html">Студия</a>
             </li>
             <li class="menu-item">
               <a href="#">Клиенты</a>
             </li>
-            <li class="menu-item current">
+            <li class="menu-item">
               <a href="#">Магазин</a>
             </li>
             <li class="menu-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
+
           <ul class="user-menu">
             <li class="user-menu-item">
               <a href="#">Корзина</a>
@@ -36,8 +39,9 @@
 
     <main class="catalog-main">
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      <div class="container">
-        <section class="filter">
+
+      <section class="filter">
+        <div class="container">
           <h2 class="visually-hidden">Фильтр</h2>
 
           <form class="filter-form form" action="https://echo.htmlacademy.ru" method="post">
@@ -114,41 +118,13 @@
               </fieldset>
             </div>
 
-            <button class="btn" type="submit" >Показать</button>
+            <button class="btn" type="submit">Показать</button>
           </form>
-        </section>
+        </div>
+      </section>
 
-        <section class="clients">
-          <h2 class="visually-hidden">Наши клиенты:</h2>
-          <ul class="clients-list">
-            <li>
-              <a class="logo-link" href="">
-                <img class="transparent-logo" src="img/logo-1.png" alt="htmlacademy" width="199" height="68">
-                <img class="black-logo" src="img/logo-1-1.png" alt="htmlacademy" width="199" height="68">
-              </a>
-            </li>
-            <li>
-              <a class="logo-link" href="">
-                <img class="transparent-logo" src="img/logo-1.png" alt="pink" width="209" height="90">
-                <img class="black-logo" src="img/logo-1-1.png" alt="pink" width="209" height="90">
-              </a>
-            </li>
-            <li>
-              <a class="logo-link" href="">
-                <img class="transparent-logo" src="img/logo-1.png" alt="mishka" width="185" height="52">
-                <img class="black-logo" src="img/logo-1-1.png" alt="mishka" width="185" height="52">
-              </a>
-            </li>
-            <li>
-              <a class="logo-link" href="">
-                <img class="transparent-logo" src="img/logo-1.png" alt="htmlacademy" width="173" height="84">
-                <img class="black-logo" src="img/logo-1-1.png" alt="htmlacademy" width="173" height="84">
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="sort">
+      <section class="sort">
+        <div class="container">
           <h2 class="sort-title">Сортировка:</h2>
           <ul class="sort-list">
             <li class="sort-by">
@@ -166,9 +142,12 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="catalog-items">
+      <section class="catalog-items">
+        <div class="container">
+          <h2 class="visually-hidden">Каталог шаблонов</h2>
           <ul class="catalog-items-list">
             <li class="catalog-item">
               <img src="img/item-1.jpg" width="360" height="576" alt="" aria-label="шаблон Sedona">
@@ -216,7 +195,7 @@
                   <a href="" class="item-title">Mishka</a>
                 </h3>
                 <p>
-                  Интернет-магазин  вязаных игрушек
+                  Интернет-магазин вязаных игрушек
                 </p>
                 <button class="item-price">3 900 ₽</button>
               </div>
@@ -246,74 +225,74 @@
               </div>
             </li>
           </ul>
-
-          <nav class="pagination">
-            <ul class="pagination-list">
-              <li class="pagination-pages">
-                <a class="pagination-page-active" href="">1</a>
-              </li>
-              <li>
-                <a href="">2</a>
-              </li>
-              <li>
-                <a href="">3</a>
-              </li>
-              <li class="pagination-next">
-                <a href="">Следующая</a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </div>
-    </main>
-
-    <footer class="page-footer">
-      <section class="map-area">
-        <h2 class="visually-hidden">Как к нам проехать</h2>
-        <div id="map" class="map-link">
-          <div class="address">
-            <h3 class="adsress-studio-name">NЁRDS DESIGN STUDIO</h3>
-            <address>
-              191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </address>
-            <a href="tel:+78122757575" class="address-tel" aria-label="тел. +7 (812) 275-75-75">
-              тел.+7&nbsp;(812)&nbsp;275-75-75</a>
-              <a href="#" class="write-us btn ">напишите нам</a>
-          </div>
-          <img src="" alt="Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
-          <span class="visually-hidden">Как к нам проехать</span>
         </div>
       </section>
 
       <div class="container">
+        <nav class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-pages">
+              <a class="pagination-page-active" href="">1</a>
+            </li>
+            <li>
+              <a href="">2</a>
+            </li>
+            <li>
+              <a href="">3</a>
+            </li>
+            <li class="pagination-next">
+              <a href="">Следующая</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="map-area">
+        <div class="container">
+          <h2 class="visually-hidden">Как к нам проехать</h2>
+          <div id="map" class="map-link">
+            <div class="address">
+              <h3 class="address-studio-name">NЁRDS DESIGN STUDIO</h3>
+              <address>
+                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </address>
+              <a href="tel:+78122757575" class="address-tel" aria-label="тел. +7 (812) 275-75-75">
+                тел.+7&nbsp;(812)&nbsp;275-75-75</a>
+              <a href="#" class="write-us btn ">напишите нам</a>
+            </div>
+            <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+            <span class="visually-hidden">Как к нам проехать</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
         <section class="social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social">
+          <ul class="social-list">
             <li>
-              <a href="https://www.vkontakte.ru/htmlacademy/" class="social-item vkontake">
-                <span class="screenreader">Наш Инстаграм</span>
+              <a href="https://www.vkontakte.ru/htmlacademy/" class="social-item vkontake" aria-label="мы вконтакте">
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/htmlacademy" class="social-item facebook">
-                <span class="screenreader">Наш Инстаграм</span>
+              <a href="https://www.facebook.com/htmlacademy" class="social-item facebook" aria-label="мы в фейсбуке">
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/htmlacademy/" class="social-item insta">
-                <span class="screenreader">Наш Инстаграм</span>
+              <a href="https://www.instagram.com/htmlacademy/" class="social-item insta" aria-label="мы в инстаграм">
               </a>
             </li>
           </ul>
         </section>
-        <section class="discount">
-          <b>
-            Давайте дружить, это выгодно!
-          </b>
+
+        <article class="discount">
+          <h2>Давайте дружить, это выгодно!</h2>
           <p>
             Скидка 10% для друзей из социальных сетей.
           </p>
-        </section>
+        </article>
       </div>
     </footer>
   </body>
