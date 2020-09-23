@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
@@ -11,7 +11,7 @@
     <header class="page-header catalog-header">
       <div class="container">
         <nav class="main-nav">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Нёпдс">
           </a>
           <ul class="menu">
@@ -53,17 +53,13 @@
                   <legend>Стоимость</legend>
                   <div class="range-wrap">
                     <div class="range">
-                      <span class="range-dot dot-min"></span>
                       <span class="range-dot dot-max"></span>
+                      <span class="range-dot dot-min"></span>
                     </div>
-                    <div class="range-price">
-                      <label class="range-price-label" for="price-min">от
-                        <input class="range-price-input" type="text" name="range-min" id="price-min" value="0">
-                      </label>
-                      <label class="range-price-label" for="price-max">до
-                        <input class="range-price-input" type="text" name="range-min" id="price-max" value="5000">
-                      </label>
-                    </div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
                   </div>
                 </fieldset>
               </div>
@@ -74,17 +70,17 @@
                   <ul class="form-field-param">
                     <li>
                       <input id="adaptive" class="visually-hidden" type="radio" name="grid-adaptive" checked>
-                      <label class="grid" for="adaptive">Адаптивная</label>
+                      <label class="grid-filter" for="adaptive">Адаптивная</label>
                     </li>
 
                     <li>
                       <input id="fixed" class="visually-hidden" type="radio" name="grid-fixed">
-                      <label class="grid" for="fixed">Фиксированная</label>
+                      <label class="grid-filter" for="fixed">Фиксированная</label>
                     </li>
 
                     <li>
                       <input id="flex" class="visually-hidden" type="radio" name="grid-flex" checked>
-                      <label class="grid" for="flex">Резиновая</label>
+                      <label class="grid-filter" for="flex">Резиновая</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -257,7 +253,6 @@
       <section class="map-area">
         <h2 class="visually-hidden">Как к нам проехать</h2>
         <div id="map" class="map-link">
-          <span class="visually-hidden">Как к нам проехать</span>
           <div class="container">
             <div class="address">
               <h3>NЁRDS DESIGN STUDIO</h3>
