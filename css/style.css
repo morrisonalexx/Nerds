@@ -458,6 +458,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   order: 1;
+  letter-spacing: 0.1px;
 }
 
 .service p {
@@ -619,17 +620,15 @@ img {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding: 46px 0 44px 0;
+  padding: 46px 41px 44px 32px;
   list-style: none;
 }
 
 .partners-list li {
   position: relative;
-}
-
-.logo-link {
 }
 
 .partners-list li:not(:last-of-type)::after {
@@ -642,14 +641,36 @@ img {
   background-color: #eeeeee;
 }
 
+.partners-list li:first-of-type {
+  padding-top: 11px;
+}
+
+.partners-list li:nth-of-type(2) {
+  padding-right: 6px;
+}
+
+.partners-list li:nth-of-type(3) {
+  padding-right: 23px;
+}
+
+.partners-list li:last-of-type {
+  padding-right: 2px;
+  padding-top: 5px;
+}
+
 .partners-list li:first-of-type::after {
   left: 247px;
-  top: 7px;
+  top: 12px;
 }
 
 .partners-list li:nth-of-type(2)::after {
-  left: 241px;
+  left: 251px;
   top: 18px;
+}
+
+.partners-list li:nth-of-type(3)::after {
+  left: 240px;
+  top: 0;
 }
 
 .partner-logo {
@@ -667,11 +688,24 @@ img {
 }
 
 .map-link {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
   padding-top: 54px;
   height: 416px;
-  position: relative;
-  width: 100%;
   background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+
+.map-link::after {
+  position: absolute;
+  content: "";
+  width: 231px;
+  height: 190px;
+  top: 86px;
+  left: 822px;
+  background-image: url("../img/map-marker.png");
+  z-index: 1;
 }
 
 .map-link img {
@@ -698,6 +732,7 @@ img {
   margin: 0;
   margin-top: 3px;
   margin-bottom: 26px;
+  letter-spacing: -0.4px;
 }
 
 .map-link address {
