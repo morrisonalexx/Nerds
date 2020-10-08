@@ -50,15 +50,22 @@
               <div class="filter-form-field">
                 <fieldset>
                   <legend>Стоимость:</legend>
-                  <div class="range-wrap">
-                    <div class="range">
-                      <button class="range-dot dot-max"></button>
-                      <button class="range-dot dot-min"></button>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
                     </div>
-                  </div>
-                  <div class="price-controls">
-                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        от <input type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до <input type="number" name="max-price" value="15000">
+                      </label>
+                    </div>
                   </div>
                 </fieldset>
               </div>
@@ -229,16 +236,16 @@
             </section>
 
             <ul class="pagination-list">
-              <li class="pagination-list-item pagination-page-active">
+              <li class="pagination-item-current pagination-item">
                 <a href="">1</a>
               </li>
-              <li class="pagination-list-item">
+              <li class="pagination-item">
                 <a href="">2</a>
               </li>
-              <li class="pagination-list-item">
+              <li class="pagination-item">
                 <a href="">3</a>
               </li>
-              <li class="pagination-list-item">
+              <li class="pagination-item">
                 <a href="">Следующая</a>
               </li>
             </ul>

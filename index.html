@@ -152,20 +152,23 @@
             <p>
               с 2004 года Любим точность во всем:
             </p>
-            <table class="our-profits">
-              <tbody>
-                <tr class="profits">
-                  <th>Уровень самоотдачи</th>
-                  <th>Соблюдение сроков</th>
-                  <th>Минимальная предоплата</th>
-                </tr>
-                <tr class="profits-percentage">
-                  <td>146<span>%</span></td>
-                  <td>100<span>%</span></td>
-                  <td>50<span>%</span></td>
-                </tr>
-              </tbody>
-            </table>
+
+            <ul class="our-profits">
+              <li class="profits">
+                <div>146<span>%</span></div>
+                Уровень самоотдачи
+              </li>
+
+              <li class="profits">
+                <div>100<span>%</span></div>
+                Соблюдение сроков
+              </li>
+              <li class="profits">
+                <div>50<span>%</span></div>
+                Минимальная предоплата
+              </li>
+            </ul>
+
           </div>
         </div>
       </section>
@@ -248,8 +251,8 @@
     </footer>
 
     <section class="modal modal-write">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <button class="close-button" type="button" aria-label="Закрыть"></button>
+      <h2 class="modal-heading">Напишите нам</h2>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="modal-container">
@@ -260,7 +263,7 @@
           </div>
 
           <div class="feedback-item">
-            <label for="mail">Ваш e-mail:</label>
+            <label for="mail">Ваш email:</label>
             <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com" required>
           </div>
         </div>
