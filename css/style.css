@@ -9,6 +9,47 @@
   --special-green: #00CA74;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 /* Global */
 
@@ -231,9 +272,6 @@ img {
   justify-content: space-between;
 }
 
-.menu-item {
-}
-
 .menu-item a,
 .user-menu-item a,
 .menu-item-active a {
@@ -450,8 +488,8 @@ img {
   margin-bottom: 73px;
 
   display: grid;
-  grid-template-columns: 651px auto;
-  column-gap: 149px;
+  grid-template-columns: 661px auto;
+  column-gap: 139px;
 
 }
 
@@ -468,7 +506,6 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  letter-spacing: -0.4px;
 }
 
 .about-1 p:first-of-type {
@@ -1367,6 +1404,16 @@ left: 96px;
 }
 
 /* Modal */
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: .6s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: .6s;
+}
 
 .modal-write {
   position: absolute;
