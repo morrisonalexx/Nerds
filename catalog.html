@@ -60,10 +60,10 @@
                     </div>
                     <div class="price-controls">
                       <label class="min-price">
-                        от <input type="number" name="min-price" value="0">
+                        от <input type="text" name="min-price" value="0">
                       </label>
                       <label class="max-price">
-                        до <input type="number" name="max-price" value="15000">
+                        до <input type="text" name="max-price" value="15000">
                       </label>
                     </div>
                   </div>
@@ -75,17 +75,17 @@
                   <legend>Сетка:</legend>
                   <ul class="form-field-param">
                     <li>
-                      <input id="adaptive" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-adaptive" checked disabled>
+                      <input id="adaptive" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adapt"checked disabled>
                       <label class="grid-filter" for="adaptive">Адаптивная</label>
                     </li>
 
                     <li>
-                      <input id="fixed" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-fixed">
+                      <input id="fixed" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fix">
                       <label class="grid-filter" for="fixed">Фиксированная</label>
                     </li>
 
                     <li>
-                      <input id="flex" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-flex">
+                      <input id="flex" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fluid">
                       <label class="grid-filter" for="flex">Резиновая</label>
                     </li>
                   </ul>
@@ -97,26 +97,26 @@
                   <legend>Особенности:</legend>
                   <ul class="form-field-param">
                     <li>
-                      <input id="slider" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" value="true" checked>
+                      <input id="slider" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="slider" checked>
                       <label class="form-radio" for="slider">Слайдер</label>
                     </li>
 
                     <li class="form-field-item">
-                      <input id="advantages" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages" value="false">
+                      <input id="advantages" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="features-block">
                       <label class="form-radio" for="advantages">Блок прeимуществ</label>
                     </li>
 
                     <li class="form-field-item">
-                      <input id="news" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" value="false" checked>
+                      <input id="news" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="news" checked>
                       <label class="form-radio" for="news">Новости</label>
                     </li>
 
                     <li class="form-field-item">
-                      <input id="gallery" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" value="false">
+                      <input id="gallery" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="gallery">
                       <label class="form-radio" for="gallery">Галерея</label>
                     </li>
                     <li class="form-field-item">
-                      <input id="cart" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" value="false">
+                      <input id="cart" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="cart">
                       <label class="form-radio" for="cart">Корзина</label>
                     </li>
                   </ul>

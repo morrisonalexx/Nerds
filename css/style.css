@@ -129,15 +129,18 @@ img {
 }
 
 .info-btn:hover,
-.websites .order-btn:hover {
+.websites .order-btn:hover,
+.write-us:hover {
   background-color: #E74246;
 }
 
 .info-btn:focus,
 .info-btn:active,
 .websites .order-btn:focus,
-.websites .order-btn:active {
-  color: rgba(255, 255, 255, 0.3);;
+.websites .order-btn:active,
+.write-us:focus,
+.write-us:active {
+  color: rgba(255, 255, 255, 0.3);
   background: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -255,6 +258,7 @@ img {
 .user-menu {
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 
   list-style: none;
 
@@ -269,7 +273,9 @@ img {
 .menu {
   margin: 0 auto;
   margin-right: 246px;
-  justify-content: space-between;
+}
+
+.menu-item {
 }
 
 .menu-item a,
@@ -277,7 +283,6 @@ img {
 .menu-item-active a {
   color: var(--basic-black);
   display: block;
-  padding: 24px 0 13px 0;
 }
 
 .menu-item:not(:last-child) {
@@ -299,16 +304,19 @@ img {
   opacity: 0.3;
 }
 
-
-.menu-item:active,
-.user-menu-item:active{
-  color: var(--basic-black);
-  opacity: 1;
-  border-bottom: 2px solid var(--special-red);
+.menu-item-active a {
+  position: relative;
 }
 
-.menu-item-active {
-  border-bottom: 2px solid var(--special-red);
+.menu-item-active a::before  {
+  content: "";
+  position: absolute;
+  top: 42px;
+  height: 2px;
+  width: 100%;
+  color: var(--basic-black);
+  opacity: 1;
+  background-color: var(--special-red);
 }
 
 .user-menu {
@@ -326,7 +334,7 @@ img {
   width: 15px;
   height: 15px;
   left: 0;
-  top: 29px;
+  top: 7px;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: url("../img/svg/cart-icon.svg");
@@ -409,7 +417,7 @@ img {
   z-index: 1;
 }
 
-.slider-control {
+.slider-controls label {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -419,8 +427,22 @@ img {
   border-radius: 50%;
   font-size: 0;
   background-color: var(--basic-white);
+  cursor: pointer;
 }
 
+#slider-01:checked~.slider-controls label[for=slider-01]::after,
+#slider-02:checked~.slider-controls label[for=slider-02]::after,
+#slider-03:checked~.slider-controls label[for=slider-03]::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #C1C1C1;
+  border-radius: 50%;
+  z-index: 1;
+}
 /* Main */
 
 .index-main {
@@ -1324,14 +1346,18 @@ left: 96px;
 .social-list li {
   display: inline-block;
   margin-right: 12px;
-  width: 79px;
-  height: 79px;
   background-color: #e1e1e1;
   border-radius: 50%;
 }
 
 .social-list li:last-of-type {
   margin-right: 0;
+}
+
+.social-item {
+  display: block;
+  width: 79px;
+  height: 79px;
 }
 
 .social-item::before {
@@ -1503,7 +1529,6 @@ left: 96px;
   padding-left: 14px;
   background-color: #FFFFFF;
   border: 2px solid #D7DCDE;
-  box-sizing: border-box;
   color: #444444;
   border-radius: 3px;
 }
@@ -1544,4 +1569,8 @@ left: 96px;
 .feedback-item textarea:focus,
 .feedback-item textarea:active {
   border: 2px solid #000000;
+}
+
+.feedback-item input:invalid {
+  border: 2px solid #E74246;
 }
