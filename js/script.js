@@ -11,6 +11,8 @@ closePopupButton.addEventListener('click', function (evt) {
   popup.classList.remove('modal-show');
 });
 
-closePopupButton.addEventListener('click', function (evt) {
-  popup.classList.remove('modal-show');
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    popup.classList.remove('modal-show');
+  }
 });
