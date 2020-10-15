@@ -371,13 +371,17 @@ img {
 }
 
 .slide p {
-  width: 400px;
-  margin-top: 25px;
-  margin-bottom: 39px;
+  width: 416px;
+  margin-top: 37px;
+  margin-bottom: 27px;
   font-style: normal;
   font-weight: normal;
 }
 
+.slide-1 p {
+  margin-top: 26px;
+  margin-bottom: 38px;
+}
 .slide-1,
 .slide-2,
 .slide-3 {
@@ -437,15 +441,15 @@ img {
   z-index: 1;
 }
 
-.slider-1:checked ~ .slider-wrap .slider-list {
+.slider-1:checked ~ .slider-list {
   transform: translate(0);
 }
 
-.slider-2:checked ~ .slider-wrap .slider-list {
+.slider-2:checked ~ .slider-list {
   transform: translate(-1157px);
 }
 
-.slider-3:checked ~ .slider-wrap .slider-list {
+.slider-3:checked ~ .slider-list {
   transform: translate(-2314px);
 }
 
