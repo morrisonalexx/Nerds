@@ -5,7 +5,7 @@
     <title>Nerds</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header index-header">
@@ -16,7 +16,7 @@
           </a>
           <ul class="menu">
             <li class="menu-item menu-item-active">
-              <a href="#">Студия</a>
+              <a>Студия</a>
             </li>
             <li class="menu-item">
               <a href="#">Клиенты</a>
@@ -28,13 +28,14 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-
-          <ul class="user-menu">
-            <li class="user-menu-item">
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
         </nav>
+
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+
       </div>
     </header>
 
@@ -93,7 +94,7 @@
           <ul class="services-list">
             <li class="service websites">
               <h3>Веб&#8209;сайты</h3>
-              <img src="img/illustration-1.jpg" width="300" height="146" alt="">
+              <img src="img/illustration-1.jpg" width="300" height="146" alt="иллюстрация к разделу">
               <p>
                 Мир никогда не будет прежним после того как увидит ваш сайт!
               </p>
@@ -102,7 +103,7 @@
 
             <li class="service apps">
               <h3>Приложения</h3>
-              <img src="img/illustration-2.jpg" width="300" height="146" alt="">
+              <img src="img/illustration-2.jpg" width="300" height="146" alt="иллюстрация к разделу">
               <p>
                 Покорите топ&#8209;10 приложений в&nbsp;AppStore и Google Play
               </p>
@@ -111,7 +112,7 @@
 
             <li class="service presentation">
               <h3>Презентации</h3>
-              <img src="img/illustration-3.jpg" width="300" height="146" alt="">
+              <img src="img/illustration-3.jpg" width="300" height="146" alt="иллюстрация к разделу">
               <p>
                 Вы даже не подозреваете, насколько вы изумительны!
               </p>
@@ -171,7 +172,6 @@
                 Минимальная предоплата
               </li>
             </ul>
-
           </div>
         </div>
       </section>
@@ -181,22 +181,22 @@
           <h2 class="visually-hidden">Наши клиенты:</h2>
           <ul class="partners-list">
             <li>
-              <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="логотип сайта HTML академии">
                 <img class="partner-logo" src="img/svg/logo-html.svg" alt="htmlacademy" width="199" height="68">
               </a>
             </li>
             <li>
-              <a class="logo-link" href="#">
+              <a class="logo-link" href="#" aria-label="логотип сайта барбершоп Бородинский">
                 <img class="partner-logo" src="img/svg/logo-borodinsky.svg" alt="borodinsky" width="209" height="90">
               </a>
             </li>
             <li>
-              <a class="logo-link" href="#">
+              <a class="logo-link" href="#" aria-label="логотип сайта Pink">
                 <img class="partner-logo" src="img/svg/logo-pink.svg" alt="pink" width="185" height="52">
               </a>
             </li>
             <li>
-              <a class="logo-link" href="#">
+              <a class="logo-link" href="#" aria-label="логотип сайта Мишка">
                 <img class="partner-logo" src="img/svg/logo-mishka.svg" alt="mishka" width="173" height="84">
               </a>
             </li>
@@ -258,7 +258,6 @@
 
     <section class="modal modal-write">
       <h2 class="modal-heading">Напишите нам</h2>
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="modal-container">
@@ -281,9 +280,9 @@
         </div>
         <button class="btn send-feedback" type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZWM68ZLbB7R4lspZChK3kJamxddOtRA&callback=initMap"></script>
   </body>
 </html>

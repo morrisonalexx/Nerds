@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Nerds</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -28,13 +28,13 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-
-          <ul class="user-menu">
-            <li class="user-menu-item">
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
         </nav>
+
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -75,7 +75,7 @@
                   <legend>Сетка:</legend>
                   <ul class="form-field-param">
                     <li>
-                      <input id="adaptive" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adapt" checked disabled>
+                      <input id="adaptive" class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="adapt" checked>
                       <label class="grid-filter" for="adaptive">Адаптивная</label>
                     </li>
 
@@ -98,26 +98,26 @@
                   <ul class="form-field-param">
                     <li>
                       <input id="slider" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="slider" checked>
-                      <label class="form-radio" for="slider">Слайдер</label>
+                      <label class="form-checkbox" for="slider">Слайдер</label>
                     </li>
 
                     <li class="form-field-item">
                       <input id="advantages" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="features-block">
-                      <label class="form-radio" for="advantages">Блок прeимуществ</label>
+                      <label class="form-checkbox" for="advantages">Блок прeимуществ</label>
                     </li>
 
                     <li class="form-field-item">
                       <input id="news" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="news" checked>
-                      <label class="form-radio" for="news">Новости</label>
+                      <label class="form-checkbox" for="news">Новости</label>
                     </li>
 
                     <li class="form-field-item">
                       <input id="gallery" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="gallery">
-                      <label class="form-radio" for="gallery">Галерея</label>
+                      <label class="form-checkbox" for="gallery">Галерея</label>
                     </li>
                     <li class="form-field-item">
                       <input id="cart" class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="cart">
-                      <label class="form-radio" for="cart">Корзина</label>
+                      <label class="form-checkbox" for="cart">Корзина</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -270,7 +270,7 @@
             </div>
           </div>
 
-          <div class="map-link" id="map">
+          <div class="map-link map" id="map">
             <div class="map-pin"></div>
           </div>
         </section>
@@ -304,6 +304,7 @@
         </article>
       </div>
     </footer>
-
+    <script src="js/script-min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZWM68ZLbB7R4lspZChK3kJamxddOtRA&callback=initMap"></script>
   </body>
 </html>
