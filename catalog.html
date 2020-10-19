@@ -304,6 +304,34 @@
         </article>
       </div>
     </footer>
+
+    <section class="modal modal-write">
+      <h2 class="modal-heading">Напишите нам</h2>
+
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-container">
+
+          <div class="feedback-item">
+            <label for="name">Ваше имя:</label>
+            <input id="name" class="user-name" name="name" type="text" placeholder="Имя Фамилия" required>
+          </div>
+
+          <div class="feedback-item">
+            <label for="mail">Ваш email:</label>
+            <input id="mail" class="user-email" name="mail" type="email" placeholder="email@example.com" required>
+          </div>
+        </div>
+
+        <div class="feedback-item">
+          <label for="text">Текст письма:</label>
+          <textarea id="text" class="feedback-text" name="text" cols="30" rows="10" placeholder="В свободной форме"
+            required></textarea>
+        </div>
+        <button class="btn send-feedback" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
     <script src="js/script-min.js"></script>
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkZWM68ZLbB7R4lspZChK3kJamxddOtRA&callback=initMap"></script>
   </body>
