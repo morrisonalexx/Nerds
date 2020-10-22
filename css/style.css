@@ -197,7 +197,6 @@ img {
 /* Grid */
 
 .page-body {
-  min-width: 1200px;
   position: relative;
   min-height: 100%;
   display: grid;
@@ -206,7 +205,8 @@ img {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
+  padding: 0 20px 0 20px;
   margin: 0 auto;
 }
 
@@ -546,7 +546,6 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  letter-spacing: -0.2px;
 }
 
 .about-1 p:first-of-type {
@@ -751,6 +750,7 @@ img {
 
 .map-area .container {
  position: relative;
+ padding: 0;
 }
 
 .map-link {
@@ -784,7 +784,6 @@ img {
   justify-content: flex-start;
   width: 319px;
   height: 308px;
-
   margin-top: 54px;
   padding: 49px 50px 47px 50px;
   background-color: var(--basic-white);
