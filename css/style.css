@@ -26,6 +26,13 @@
   --toggle-shadow: #cfcfcf;
   --social-bg: #e1e1e1;
   --slider-radio-checked: #C1C1C1;
+  --button-shadow: rgba(0, 1, 1, 0.1);
+  --catalog-item-border: rgba(0, 0, 0, 0.1);
+  --button-text-focus: rgba(255, 255, 255, 0.3);
+  --catalog-item-before: rgba(0, 0, 0, 0.12);
+  --catalog-item-hover: rgba(0, 1, 1, 0.25);
+  --pagination-item-focus: rgba(0, 0, 0, 0.3);
+  --modal-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* Animations */
@@ -119,7 +126,8 @@ img {
 
 .info-btn:hover,
 .websites .order-btn:hover,
-.write-us:hover {
+.write-us:hover,
+.send-feedback:hover {
   background-color: var(--basic-red);
 }
 
@@ -128,10 +136,12 @@ img {
 .websites .order-btn:focus,
 .websites .order-btn:active,
 .write-us:focus,
-.write-us:active {
-  color: rgba(255, 255, 255, 0.3);
-  background: var();
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.write-us:active,
+.send-feedback:focus,
+.send-feedback:active {
+  color: var(--button-text-focus);
+  background-color: var(--special-red);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 
 .apps .order-btn {
@@ -144,9 +154,9 @@ img {
 
 .apps .order-btn:focus,
 .apps .order-btn:active {
-  color: rgba(255, 255, 255, 0.3);;
+  color: var(--button-text-focus);
   background-color:  var(--button-green-focus);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 
 .presentation .order-btn {
@@ -159,9 +169,9 @@ img {
 
 .presentation .order-btn:focus,
 .presentation .order-btn:active {
-  color: rgba(255, 255, 255, 0.3);;
+  color: var(--button-text-focus);
   background-color:var(--button-yellow-focus);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 
 .write-us {
@@ -187,7 +197,7 @@ img {
 .filter-btn:focus,
 .filter-btn:active {
   background-color: var(--button-grey);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
   border-radius: 3px;
 }
 
@@ -202,7 +212,7 @@ img {
 .item-price:focus,
 .item-price:active {
   background-color: var(--darken-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 .send-feedback {
   width: 259px;
@@ -898,7 +908,7 @@ img {
   position: relative;
   background-color: var(--background-grey);
   border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--catalog-item-border);
   padding-top: 40px;
 }
 
@@ -911,7 +921,7 @@ img {
   left: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--catalog-item-before);
   z-index: 1;
 }
 
@@ -1017,7 +1027,7 @@ img {
 
 .catalog-item:hover {
   border: none;
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--catalog-item-hover);
   border-radius: 5px;
 }
 
@@ -1066,9 +1076,9 @@ img {
 
 .pagination-item a:focus,
 .pagination-item a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--pagination-item-focus);
   background-color: var(--button-grey);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 
 .pagination-item-current a:hover,
@@ -1152,13 +1162,13 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--border-grey-light);
+  background-color: var(--border-grey-light);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: var(--special-green);
+  background-color: var(--special-green);
 }
 
 .range-controls .toggle {
@@ -1201,7 +1211,7 @@ img {
   color: var(--filter-text);
   border: none;
   border-radius: 5px;
-  background: var(--dark-white);
+  background-color: var(--dark-white);
   font-family: inherit;
   font-size: inherit;
 }
@@ -1531,7 +1541,7 @@ left: 96px;
   left: 0;
   margin: auto;
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--modal-shadow);
   z-index: 50;
 }
 
